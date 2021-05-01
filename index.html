@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Required meta tags-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Title of the project-->
+    <title>Registration Form</title>
+    <!--connection of style.css file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<!--Body part-->
+<body>   
+        <h2>My Registration Form</h2>
+        <h3>Please give the valuable data and Complete your Registration Here</h3>
+        <hr/>
+             <!--connecting php file & Build up the Registration form here-->
+            <form action="thanks.html" autocomplete="on" method="POST" target="_blank">
+                <!--First Name field-->
+                <label>FirstName :</label>  
+                <input type="text" placeholder="Firstname" name="Firstname" required />         
+                <br/><br/>
+                <!--Last Name field-->
+                <label>LastName :</label>  
+                <input type="text" placeholder="Lastname" name="Lastname" required />         
+                <br/><br/>
+                <!--Password field-->
+                <label>Password :</label>  
+                <input type="password" placeholder="Password" name="password" required />
+                <br/><br/>
+                <!--Gender field-->
+                <label>Gender :</label>
+                         <input type="radio" name="gender" value="m">Male
+                         <input type="radio" name="gender" value="f">Female
+                         <input type="radio" name="gender" value="o">Others
+                <br><br>
+                <!--Email field-->
+                <label>Email :</label>  
+                <input type="email" name="email" placeholder="Email">
+                <br/><br/>
+                <label>Your Age : </label>
+                <input type="number" name="age" id="name" placeholder="How old are you?">
+                <br/><br/>
+                <!--contact number field-->
+                <label>Phone Number :</label>
+                <input type="phone" name="phone" placeholder="Phone number">
+                <br/><br/>
+                <!--Languages field-->
+                <label>Languages :</label>
+                <input type="checkbox" name="languages" value="B">Bangla
+                <input type="checkbox" name="languages" value="E">English
+                <input type="checkbox" name="languages" value="H">Hindi
+                <input type="checkbox" name="languages" value="U">Urdu
+
+                <br/><br/>
+
+                <!--Submit Button-->
+                <input type="submit" value="Submit"> 
+                
+            </form>
+    
+</body>
+</html>
