@@ -16,18 +16,18 @@
         <h3>Please give the valuable data and Complete your Registration Here</h3>
         <hr/>
              <!--connecting php file & Build up the Registration form here-->
-            <form action="thanks.html" autocomplete="on" method="POST" target="_blank">
+            <form action="thanks.html" autocomplete="off" method="POST" target="_blank">
                 <!--First Name field-->
                 <label>FirstName :</label>  
-                <input type="text" placeholder="Firstname" name="Firstname" required />         
+                <input type="text" placeholder="Firstname" name="Firstname" size="30" class="form-control" required />         
                 <br/><br/>
                 <!--Last Name field-->
                 <label>LastName :</label>  
-                <input type="text" placeholder="Lastname" name="Lastname" required />         
+                <input type="text" placeholder="Lastname" name="Lastname" size="30" class="form-control" required />         
                 <br/><br/>
                 <!--Password field-->
                 <label>Password :</label>  
-                <input type="password" placeholder="Password" name="password" required />
+                <input type="password" placeholder="Password" name="password" size="30" class="form-control" required />
                 <br/><br/>
                 <!--Gender field-->
                 <label>Gender :</label>
@@ -37,14 +37,14 @@
                 <br><br>
                 <!--Email field-->
                 <label>Email :</label>  
-                <input type="email" name="email" placeholder="Email">
+                <input type="email" name="email" placeholder="Email" size="33" class="form-control" required/>
                 <br/><br/>
                 <label>Your Age : </label>
-                <input type="number" name="age" id="name" placeholder="How old are you?">
+                <input type="number" name="age" id="name" placeholder="How old are you?" size="10" class="form-control" required/>
                 <br/><br/>
                 <!--contact number field-->
                 <label>Phone Number :</label>
-                <input type="phone" name="phone" placeholder="Phone number">
+                <input type="phone" name="phone" placeholder="Phone number" size="25" class="form-control" required/>
                 <br/><br/>
                 <!--Languages field-->
                 <label>Languages :</label>
@@ -52,11 +52,17 @@
                 <input type="checkbox" name="languages" value="E">English
                 <input type="checkbox" name="languages" value="H">Hindi
                 <input type="checkbox" name="languages" value="U">Urdu
-
+                <input type="checkbox" name="languages" value="L">Latin
+                <input type="checkbox" name="languages" value="A">Arabic 
                 <br/><br/>
+                <!--Date of Birth field-->
+                <label>Date of Birth : </label>
+                <input type="date" class="form-control" min="2010-01-01" max="2030-01-01" required/>
+                <br/><br/>
+                <!---->
 
-                <!--Submit Button-->
-                <input type="submit" value="Submit"> 
+                <!--SignUp Button-->
+                <input type="submit" value="SignUp" size="40" class="form-control"> 
                 
             </form>
     
